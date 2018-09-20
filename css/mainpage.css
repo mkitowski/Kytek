@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@media only screen and (max-width: 5000px) {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    background-color: #e9ecf1;
+}
+
+    /* landing page */
+    .starter {
+        height:100%;
+        width: 100%;
+        margin: auto;
+        background: url(files/code-coding-computer-574070.jpg) no-repeat 50%;
+        display: table;
+        top: 0;
+        background-size: cover;
+    }
+    .starter .inner {
+        display: table-row;
+        vertical-align: middle;
+        width: 100%;
+        max-width: none;            
+    }
+    .content {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .content h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #003a98;
+        text-shadow: 0px 0px 50px #fff;
+        font-size: 500%;
+        font-weight: 600;
+        border: solid 1px;
+    }
+    .btn {
+        border-radius: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: #003a98;
+        font-size: 150%;
+        padding: 10px 20px;
+        border: solid #003a98 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0px 0px 50px #fff;
+        box-shadow: 5px 5px 5px gray;
+        
+    }
+    .btn:hover {
+        border-color: #142c32;
+        color: #142c32;
+        box-shadow: 7px 7px 7px gray;
+    }
+    .counter {
+        display: table-row;
+        max-width: 500px;
+        vertical-align: bottom;
+    }
+    #timer {
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        font-size: 120%;
+        text-align: center;
+        font-weight: 800;
+        text-shadow: 0px 0px 50px #fff;
+    }
+
+    /* navigation */    
+    nav {
+        margin: 0px 0px;
+        padding: 10px;
+        background-color: #e9ecf1;
+        text-align: center;
+    }
+    #menu li {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 10px;
+        border: solid #003a98 2px;
+        border-radius: 150px;
+        padding-top: 15px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-shadow: 5px 5px 5px gray;
+        
+    }
+    a.men {
+        font-family: 'Oswald', sans-serif;
+        color: #003a98;
+        text-decoration: none;
+        font-size: 150%;
+        padding-top: 15px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #menu li:hover {
+        border-color: #142c32;
+        background-color: aliceblue;
+        color: #142c32;
+        box-shadow: 7px 7px 7px gray;
+    }
+    a.men:hover {
+        color: #142c32;
+    }
+
+    /* page content */    
+    p {
+        font-size: 120%;
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        margin: 3%;
+        text-indent: 30px;
+    }
+    h3 {
+        font-size: 170%;
+        text-align: center;
+        font-family: sans-serif;
+        color: #003a98;
+    }
+
+    /*project list*/    
+    div.oneproject {
+        box-shadow: 5px 5px 7px #777777;
+        padding: 25px 0px;
+        float:left;
+        width : 25%;
+        text-align: center;
+        margin-left: 5%;
+        min-height: 400px;
+    }
+    div.oneproject:hover {
+        background-color: aliceblue;
+        box-shadow: 7px 7px 9px #777777;
+    }
+    .projectlink {
+        font-family: sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    .projlogo {
+        width: 50%;
+        height:auto;
+        position:inherit;
+        border-radius: 3px;
+        font-family: 'Raleway', sans-serif;
+        color: #003a98;
+    }
+    .description {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    /* Contact */
+    div#mail{
+        clear:left;
+        padding-top: 50px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.field {
+        margin: 5%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lightgray;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lab {
+        float:left;
+        text-align: right;
+        padding-right: 10px;
+    }
+    input {
+        width: 100%;
+        border-radius: 7px;
+        border: 1px solid gray;
+        height: 2em;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+    textarea {
+        width: 100%;
+        height: 4em;
+        border-radius: 7px;
+        border: 1px solid gray;
+        font-family: 'Raleway', sans-serif;        
+    }
+    button {
+        float:none;
+        text-align: center;
+        width: 100px;
+        height: 2em;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
+    }
+    .info {
+        font-family: 'Oswald', sans-serif;
+        font-size: 70%;
+        color: red;
+    }
+    
+}
+
+@media only screen and (max-width: 680px) {
+    /*#menu {
+        display: none;
+    } */
+    
+    
+   /* Landing page */
+    #timer {
+        font-size: 70%;
+        text-align: center;
+        font-weight: 800;
+        text-shadow: 0px 0px 25px #fff;
+    }
+    .counter {
+        display: table-row;
+        max-width: 250px;
+        vertical-align: bottom;
+    }
+    .content {
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #003a98;
+        text-shadow: 0px 0px 50px #fff;
+        font-size: 300%;
+        font-weight: 600;
+        border: solid 1px;
+    }
+    .btn {
+        border-radius: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: #003a98;
+        font-size: 100%;
+        padding: 5px 10px;
+        border: solid #003a98 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0px 0px 25px #fff;
+        
+    }
+    
+    
+    /*navigation */
+    #menu li {
+        display: list-item;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid #003a98 2px;
+        border-radius: 150px;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+    a.men {
+        font-family: 'Oswald', sans-serif;
+        color: #003a98;
+        text-decoration: none;
+        font-size: 100%;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    /* Page content*/
+     p {
+        font-size: 80%;
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        margin: 3%;
+        text-indent: 15px;
+    }
+    h3 {
+        font-size: 120%;
+        text-align: center;
+        font-family: sans-serif;
+        color: #003a98;
+    }
+  
+    /*project list*/    
+    div.oneproject {
+        box-shadow: 5px 5px 7px #777777;
+        padding: 25px 0px;
+        width : 85%;
+        margin-top: 10%
+    }
+    div.oneproject:hover {
+        background-color: aliceblue;
+        box-shadow: 7px 7px 9px #777777;
+    }
+    .projectlink {
+        font-family: sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    .description {
+        font-size: 70%;
+        text-align: left;
+    }
+    
+}
