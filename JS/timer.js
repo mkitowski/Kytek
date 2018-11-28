@@ -36,15 +36,15 @@ var day, year, month;
 
 console.log(days);
 //if not full month
-if ((days < 0) && today.getMonth !=1 && ((today.getMonth = 0) || (today.getMonth = 2) || (today.getMonth = 4) || (today.getMonth = 6) || (today.getMonth = 7) || (today.getMonth = 9) || (today.getMonth = 11))) {
+if ((days < 0) && today.getMonth !=1 && ((today.getMonth == 0) || (today.getMonth == 2) || (today.getMonth == 4) || (today.getMonth == 6) || (today.getMonth == 7) || (today.getMonth == 9) || (today.getMonth == 11))) {
     days = 30 + days; // for short months
     months = months - 1;
     console.log ('Short months');
-}else if ((days < 0) && ((today.getMonth = 1) || (today.getMonth = 3) || (today.getMonth = 5) || (today.getMonth = 8) || (today.getMonth = 10))) {
+}else if ((days < 0) && ((today.getMonth == 1) || (today.getMonth == 3) || (today.getMonth == 5) || (today.getMonth == 8) || (today.getMonth == 10))) {
     days = 31 + days; // for longer months
     months = months -1;
     console.log ('Long months');
-}else if ((days < 0) && (today.getMonth = 2)) {
+}else if ((days < 0) && (today.getMonth == 2)) {
     days = 28 + days; // for February (28 days)
     months = months -1;
     console.log ('February');
