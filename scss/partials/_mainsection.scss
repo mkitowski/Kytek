@@ -1,0 +1,102 @@
+
+.starter {
+  background: url("../img/background.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  //width: 100vw;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: $bd1;
+  .text {
+    font-size: 1.5rem;
+    span {
+      font-weight: 900;
+      font-family: 'Ubuntu Mono', monospace;
+
+    }
+  }
+  .btn {
+    position: relative;
+
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    color: $bd1;
+    top: 0.3rem;
+    i {
+      animation: drop 1s ease-in-out infinite alternate;
+    }
+  }
+  .counter {
+    position: relative;
+    bottom: 1rem;
+    margin: 0 1rem;
+
+  }
+}
+
+main {
+  h2 {
+    margin: 2rem 0;
+    font-weight: 800;
+  }
+
+  #me {
+    background: $bg3;
+    color: $bd1;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    p {
+      text-align: left;
+      margin-bottom: 1rem;
+
+    }
+    a {
+      margin: 2.5rem auto;
+      text-decoration: none;
+      color: $col2;
+      border: 1px solid $bd1;
+      padding: .5rem .7rem;
+      border-bottom-left-radius: 50% .5rem;
+      border-bottom-right-radius: 50% .5rem;
+      border-top-left-radius: 50% .5rem;
+      border-top-right-radius: 50% .5rem;
+      font-weight: 600;
+      transition: color .5s ease-out, background-color .5s ease-out;
+
+      &:hover {
+        background-color: $bd1;
+        color: $col1;
+        transition: color .5s ease-out, background-color .5s ease-out;
+      }
+    }
+
+    .techno {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 2rem 0;
+
+      @media (min-width: $mobilek) {
+        font-size: 3rem;
+        padding: 5rem 0;
+
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+
+
+

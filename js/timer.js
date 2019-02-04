@@ -77,7 +77,7 @@ if (years == 0) {
     year = 'years';
 }
 
-document.getElementById("timer").textContent += 'Coding with passion from '+years+' '+year;
+document.getElementById("timer").textContent += 'Website works from '+years+' '+year;
 document.getElementById("timer").textContent += ' '+months+' '+month;
 document.getElementById("timer").textContent += ' '+days+' '+day;
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KytekCoder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<header id="home">
+    <nav>
+        <div class="logo"><h1>Maciej Kitowski</h1><h3>Personal Webpage</h3></div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+            <ul class="list">
+                <li><a class="men" href ="#home">Home</a></li>
+                <li><a class="men" href ="#me">About me</a></li>
+                <li><a class="men" href ="#code">My work</a></li>
+                <li><a class="men" href ="#mail">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="starter">
+    <div class="empty"></div>
+    <div class="text">
+        <p>Welcome, my name is <span>Maciej Kitowski</span></p>
+        <p>Scroll for more information</p>
+        <a class="btn" href="#menu"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+    <div class="counter">
+        <div id="timer"></div>
+    </div>
+</section>
+<main>
+    <section id="me">
+        <div class="container">
+            <h2>My story</h2>
+            <p>
+                I`m experienced specialist in the field of Electrical Engineering.
+                I have started as Assistant to Electrical Designer and progress my work position to Senior Electrical Engineer.
+                For last 5 years i was based in UK. At the moment, I am self-employed and I am providing service as Electrical Engineer to the one of the leading consulting company in Northern Ireland
+                and UK.
+            </p>
+            <p>
+                After my return to Poland I decided to change profession and became a software developer.
+                From September I am attending the course for front-end developers at CoderLab.
+            </p>
+            <a href="https://mkitowski.github.io/CVProject/" target="_blank" class="cv">Look at my CV</a>
+            <h2>Technologies I use</h2>
+            <div class="row techno">
+                <div class="col-3"><i class="fab fa-html5"></i><p>HTML vesrion 5</p></div>
+                <div class="col-3"><i class="fab fa-css3-alt"></i><p>CSS version 3</p></div>
+                <div class="col-3"><i class="fab fa-sass"></i><p>Sass</p></div>
+                <div class="col-3"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+            </div>
+            <div class="row techno">
+                <div class="col-3"><i class="fab fa-react"></i><p>React</p></div>
+                <div class="col-3">JQuery</div>
+                <div class="col-3"><i class="fab fa-php"></i><p>PHP</p></div>
+                <div class="col-3"><i class="fas fa-database"></i><p>MySQL</p></div>
+            </div>
+            <div class="row techno">
+                <div class="col-6"><i class="fab fa-git"></i><p>GIT - version control</p></div>
+                <div class="col-6"><i class="fab fa-npm"></i><p>npm</p></div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+    <div id="code">
+        <h3>My work</h3>
+
+    <div id='mail'>
+        <h3>Contact</h3>
+    <div id="form-message"></div>
+      <form id="contactform" method="POST" action="postman.php">
+            <div class="field">
+                <label class="lab">Name:</label>
+                <input type="text" id="uname" name="uname" placeholder="Your Name" required>
+                <div id="uname-info" class="info"></div>
+            </div>
+            <div class="field">
+                <label class="lab">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <div id="mail-info" class="info"></div>
+            </div>
+            <div class="field">
+                <label class="lab">Message:</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <div id="mess-info" class="info"></div>
+            </div>
+            <div class="field">
+                <label class="lab">Are you a human?</label>
+                <input type="text" id="check" name="check" placeholder="yes or no" required>
+                <div id="check-info" class="info"></div>
+            </div>
+            <div class="field">
+                <button type="submit" name="submit" class="submit">Send</button>
+            </div>
+        </form>
+    </div> 
+    <div id="footer">
+    &copy; copyright by Kytek 2018
+    </div>
+   <script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script> 
+    <script src="js/contact.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>

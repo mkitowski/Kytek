@@ -1,0 +1,21 @@
+.row {
+  &:before {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  margin-bottom: 10px;
+  [class*="col-"] {
+    min-height: 1px;
+    float: left;
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: 100% * $i/12;
+    }
+  }
+}
