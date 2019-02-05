@@ -1,25 +1,28 @@
 
 footer {
   font-family: 'Lato', sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-top: 5rem;
   background: $bd1;
   color: $col1;
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 2rem;
   border-top-right-radius: 50vw 10px;
   border-top-left-radius: 50vh 10px;
   -webkit-box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
   -moz-box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
   box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
-  z-index: -1;
+  display: flex;
+  justify-content: space-between;
 }
 footer a {
-  font-family: 'Baloo', cursive;
-  color: $bg2;
+  font-size: 1.3rem;
+  color: $col1;
   text-decoration: none;
-  font-weight: bold;
+  margin-right: 0.5rem;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    transition: transform 0.5s ease-in-out;
+  }
 }

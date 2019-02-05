@@ -113,61 +113,210 @@ main {
         position: relative;
         margin: 1rem auto;
         width: 80vw;
-        height: calc(80vw / 1.778);
-        background: $bd1;
+        height: calc(80vw / 0.88);
+        //background: $bd1;
         transition: transform 0.5s ease-in-out;
         z-index: 1;
 
         a {
-          color: $bg2;
+          opacity: 0;
           text-decoration: none;
-          &:hover {
-            color: $col1;
-          }
+          padding: 2rem 1rem;
+          transition: transform 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+          color: $col1;
+
         }
         .github {
           position: absolute;
-          bottom: 15%;
-          left: 15%;
+          bottom: 5%;
+          left: 5%;
           z-index: 2;
         }
         .web {
           position: absolute;
-          bottom: 15%;
-          right: 15%;
+          bottom: 5%;
+          right: 5%;
           z-index: 2;
         }
 
         .shodow {
           opacity: 0;
           position: absolute;
-          // bottom: -3px;
-          // right: -3px;
           width: 80vw;
-          height: calc(80vw / 1.778);
+          height: calc(80vw / 0.88);
           box-shadow: 2px 2px 6px $bd1;
           transition: opacity 0.5s ease-in-out;
+          z-index: -1;
         }
 
+        $workh: 420px;
+        $workw: 370px;
+
         @media (min-width: $mobilek) {
-          width: 32rem;
-          height: 18rem;
+          width: $workw;
+          height: $workh;
           .shodow {
-            width: 32rem;
-            height: 18rem;
+            width: $workw;
+            height: $workh;
           }
+        }
+
+        .ptitle {
+          margin: 40% 0.2rem 0;
+          text-align: center;
+          font-size: 1.5rem;
+          color: $col1;
+          opacity: 0;
         }
 
         &:hover {
           transform: translate(-3px, -3px);
           transition: transform 0.5s ease-in-out;
+          a {
+            transform: translate(3px, 3px);
+            color: $col1;
+            opacity: 0.5;
+            font-weight: 500;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            &:hover {
+
+              opacity: 1;
+              transition: font-weight 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+            }
+          }
+          .ptitle {
+            opacity: 1;
+            transform: translate(3px, 3px);
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+          }
           .shodow {
             background: $bd1;
-            opacity: 0.5;
+            opacity: 0.7;
             transition: opacity 0.5s ease-in-out;
+            z-index: -1;
           }
         }
       }
+
+      .mypage {
+        background: url("../../img/mypage.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .p2048 {
+        background: url("../../img/p2048.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .calc {
+        background: url("../../img/calc.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .tabl {
+        background: url("../../img/tablicz.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
+  }
+
+  #mail {
+    margin-top: 2rem;
+    background: $col1;
+    -webkit-box-shadow: 0 2px 5rem 2rem $col1;
+    box-shadow: 0 2px 5rem 2rem $col1;
+
+    .field {
+      border-left: 1px solid $bd1;
+      border-bottom: 1px solid $bd1;
+      border-radius: 0.5rem;
+      margin: 2rem auto;
+      width: 80%;
+
+      label {
+        margin-left: 1rem;
+        opacity: .5;
+        transition: opacity 0.5s ease-in-out;
+
+      }
+
+      input#check {
+        &:focus label {
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+        }
+      }
+
+      input {
+        margin: 1rem;
+        font-size: 1rem;
+        background-color: $bg3;
+        border: none;
+        box-shadow: none;
+        width: 95%;
+        transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: $col2;
+
+        &:focus {
+          background-color: white;
+          color: $bd1;
+          transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+          outline: none;
+        }
+      }
+
+      textarea {
+        margin: 1rem;
+        font-size: 1rem;
+        background: $bg3;
+        border: none;
+        box-shadow: none;
+        width: 95%;
+        resize: none;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: $col2;
+        &:focus {
+          background-color: white;
+          color: $bd1;
+          transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+          outline: none;
+        }
+      }
+
+      .info {
+        color: red;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        width: 100%;
+        background-color: $bd1;
+        color: $col1;
+        height: 2rem;
+        font-size: 1.2rem;
+        border: none;
+        text-align: center;
+        border-radius: 0.5rem;
+        transition: transform 0.5s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: translate(-3px, -3px);
+          transition: transform 0.5s ease-in-out;
+        }
+        &:active {
+          cursor: pointer;
+          transform: translate(3px, 3px);
+          transition: transform 0.2s ease-in-out;
+        }
+      }
+    }
+
   }
 }

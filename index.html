@@ -74,39 +74,45 @@
             <h2>My work</h2>
             <p>Below you can finde some of my works</p>
             <div class="portfolio">
-                <div class="project">
+                <div class="project mypage">
                     <div class="shodow"></div>
-                    <a href="https://github.com/mkitowski/2048" class="github" target="_blanck">
+                    <div class="ptitle">My personal webpage</div>
+                    <a href="https://github.com/mkitowski/Kytek" class="github" target="_blanck">
                         <i class="fab fa-github"></i> GitHUB
                     </a>
-                    <a href="https://github.com/mkitowski/2048" class="web" target="_blanck">
+                    <a href="http://kytek.pl" class="web" target="_blanck">
                         <i class="fas fa-tablet-alt"></i> Web App
                     </a>
                 </div>
-                <div class="project">
+                <div class="project p2048">
                     <div class="shodow"></div>
+                    <div class="ptitle">My version of popular puzzle game</div>
+
                     <a href="https://github.com/mkitowski/2048" class="github" target="_blanck">
                         <i class="fab fa-github"></i> GitHUB
                     </a>
-                    <a href="https://github.com/mkitowski/2048" class="web" target="_blanck">
+                    <a href="https://mkitowski.github.io/2048/" class="web" target="_blanck">
                         <i class="fas fa-tablet-alt"></i> Web App
                     </a>
                 </div>
-                <div class="project">
+                <div class="project calc">
                     <div class="shodow"></div>
-                    <a href="https://github.com/mkitowski/2048" class="github" target="_blanck">
+                    <div class="ptitle">Simple Calculator</div>
+
+                    <a href="https://github.com/mkitowski/Calc" class="github" target="_blanck">
                         <i class="fab fa-github"></i> GitHUB
                     </a>
-                    <a href="https://github.com/mkitowski/2048" class="web" target="_blanck">
+                    <a href="http://kytek.pl/kalkulator/" class="web" target="_blanck">
                         <i class="fas fa-tablet-alt"></i> Web App
                     </a>
                 </div>
-                <div class="project">
+                <div class="project tabl">
                     <div class="shodow"></div>
-                    <a href="https://github.com/mkitowski/2048" class="github" target="_blanck">
+                    <div class="ptitle">App made for my daughters to improve multiplication</div>
+                    <a href="https://github.com/mkitowski/Tabliczka" class="github" target="_blanck">
                         <i class="fab fa-github"></i> GitHUB
                     </a>
-                    <a href="https://github.com/mkitowski/2048" class="web" target="_blanck">
+                    <a href="http://kytek.pl/Tabliczka/" class="web" target="_blanck">
                         <i class="fas fa-tablet-alt"></i> Web App
                     </a>
                 </div>
@@ -114,46 +120,51 @@
         </div>
 
     </section>
+    <section id="mail">
+        <div class="container">
+            <h2>Contact</h2>
+            <div id="form-message"></div>
+            <form id="contactform" method="POST" action="https://formspree.io/maciej.kitowski@gmail.com">
+                <div class="field">
+                    <input type="text" id="uname" name="uname" placeholder="Your Name" required>
+                    <div id="uname-info" class="info"></div>
+                </div>
+                <div class="field">
+
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <div id="mail-info" class="info"></div>
+                </div>
+                <div class="field">
+
+                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+                    <div id="mess-info" class="info"></div>
+                </div>
+                <div class="field">
+                    <label class="lab">Are you a human?</label>
+                    <input type="text" id="check" name="check" placeholder="yes or no" required>
+                    <div id="check-info" class="info"></div>
+                </div>
+                <div class="field">
+                    <button type="submit" name="submit" class="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
 </main>
 
 
-
-
-    <div id="code">
-        <h3>My work</h3>
-
-    <div id='mail'>
-        <h3>Contact</h3>
-    <div id="form-message"></div>
-      <form id="contactform" method="POST" action="postman.php">
-            <div class="field">
-                <label class="lab">Name:</label>
-                <input type="text" id="uname" name="uname" placeholder="Your Name" required>
-                <div id="uname-info" class="info"></div>
-            </div>
-            <div class="field">
-                <label class="lab">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                <div id="mail-info" class="info"></div>
-            </div>
-            <div class="field">
-                <label class="lab">Message:</label>
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
-                <div id="mess-info" class="info"></div>
-            </div>
-            <div class="field">
-                <label class="lab">Are you a human?</label>
-                <input type="text" id="check" name="check" placeholder="yes or no" required>
-                <div id="check-info" class="info"></div>
-            </div>
-            <div class="field">
-                <button type="submit" name="submit" class="submit">Send</button>
-            </div>
-        </form>
-    </div> 
-    <div id="footer">
-    &copy; copyright by Kytek 2018
-    </div>
+    <footer>
+        <div class="left">
+            &copy; copyright by Maciej Kitowski 2019
+        </div>
+        <div class="right">
+            <a href="https://github.com/mkitowski" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/maciej-kitowski-5795b360/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:maciej.kitowski@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+48505676131"><i class="fas fa-phone-square"></i></a>
+        </div>
+    </footer>
    <script
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
