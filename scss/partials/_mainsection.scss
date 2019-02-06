@@ -1,8 +1,8 @@
 .starter {
-  background: url("../img/background.png") no-repeat;
+  background: url("../img/background3.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
 
   //width: 100vw;
   height: 30rem;
@@ -27,7 +27,9 @@
     color: $bd1;
     top: 0.3rem;
     i {
-      animation: drop 1s ease-in-out infinite alternate;
+      &:hover {
+        animation: drop 1s ease-in-out infinite alternate;
+      }
     }
   }
   .counter {
@@ -46,17 +48,20 @@ main {
   }
 
   #me {
-    background: $bg3;
+    background: $col1;
     color: $bd1;
     padding: 5rem 0 2rem;
     margin-bottom: 5rem;
     text-align: center;
-    -webkit-box-shadow: 0 2px 5rem 1rem $bg3;
-    box-shadow: 0 2px 5rem 1rem $bg3;
+    -webkit-box-shadow: 0 2px 5rem 1rem $col1;
+    box-shadow: 0 2px 5rem 1rem $col1;
     p {
       text-align: left;
       margin-bottom: 1rem;
       padding: 0 2rem;
+      line-height: 1.5rem;
+      word-break: keep-all;
+      word-spacing: 4px;
     }
 
     a {

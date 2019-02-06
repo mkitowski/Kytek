@@ -1,4 +1,52 @@
 $(function () {
+
+    $("#btn_home").click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 2000);
+    });
+
+    $("#btn_me_arr").click(function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $("#me").offset().top
+        },
+        2000
+      );
+    });
+
+    $("#btn_me").click(function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $("#me").offset().top
+        },
+        2000
+      );
+    });
+
+    $("#btn_code").click(function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $("#code").offset().top
+        },
+        2000
+      );
+    });
+
+    $("#btn_mail").click(function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $("#mail").offset().top
+        },
+        2000
+      );
+    });
+
     $('.submit').click(function(event) {
         console.log('clicked')
         
