@@ -1,21 +1,16 @@
 
 footer {
   font-family: 'Lato', sans-serif;
-  margin-top: 5rem;
+  font-size: 1rem;
   background: $bd1;
   color: $col1;
   width: 100%;
-  padding: 2rem 2rem;
-  border-top-right-radius: 50vw 10px;
-  border-top-left-radius: 50vh 10px;
-  -webkit-box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
-  -moz-box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
-  box-shadow: 5px 5px 20px 1px rgba(178, 178, 178, 1);
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
 footer a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: $col1;
   text-decoration: none;
   margin-right: 0.5rem;

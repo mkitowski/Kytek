@@ -54,8 +54,7 @@ main {
     padding: 5rem 0 2rem;
     margin-bottom: 5rem;
     text-align: center;
-    -webkit-box-shadow: 0 2px 5rem 1rem $col1;
-    box-shadow: 0 2px 5rem 1rem $col1;
+ 
     p {
       text-align: left;
       margin-bottom: 1rem;
@@ -233,8 +232,7 @@ main {
   #mail {
     margin-top: 2rem;
     background: $col1;
-    -webkit-box-shadow: 0 2px 5rem 2rem $col1;
-    box-shadow: 0 2px 5rem 2rem $col1;
+    padding: 2rem 0;
 
     .field {
       border-left: 1px solid $bd1;
