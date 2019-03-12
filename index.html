@@ -1,175 +1,297 @@
 <!DOCTYPE html>
-<html lang=pl>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.65, maximum-scale=1"
+    />
     <title>Maciej Kitowski - FrontEnd Developer</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-
-</head>
-<body>
-<header>
-    <nav>
-        <div class="logo"><h3><span>Maciej Kitowski</span> Personal Webpage</h3></div>
-        <div class="menu">
-            <i class="fas fa-bars"></i>
-            <ul class="list">
-                <li><a class="men" id="btn_home" href ="#home">Home</a></li>
-                <li><a class="men" id="btn_me" href ="#me">About me</a></li>
-                <li><a class="men" id="btn_code" href ="#code">My work</a></li>
-                <li><a class="men" id="btn_mail" href ="#mail">Contact</a></li>
-            </ul>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h3><span>Maciej Kitowski</span> Personal Webpage</h3>
         </div>
-    </nav>
-</header>
-<section class="starter" id="home">
-    <div class="empty"></div>
-    <div class="text">
+        <div class="menu">
+          <i class="fas fa-bars"></i>
+          <ul class="list">
+            <li><a class="men" id="btn_home" href="#home">Home</a></li>
+            <li><a class="men" id="btn_me" href="#me">About me</a></li>
+            <li><a class="men" id="btn_code" href="#code">My work</a></li>
+            <li><a class="men" id="btn_mail" href="#mail">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="starter" id="home">
+      <div class="empty"></div>
+      <div class="text">
         <p>Welcome, my name is <span>Maciej Kitowski</span></p>
         <p>Scroll down for more information</p>
-        <a class="btn" id="btn_me_arr" href="#me"><i class="fas fa-angle-double-down"></i></a>
-    </div>
-    <div class="counter">
+        <a class="btn" id="btn_me_arr" href="#me"
+          ><i class="fas fa-angle-double-down"></i
+        ></a>
+      </div>
+      <div class="counter">
         <div id="timer"></div>
-    </div>
-</section>
-<main>
-    <section id="me">
-        <div class="container">
-            <h2>My story</h2>
-            <p>
-                I`m experienced specialist in the field of Electrical Engineering.
-                I have started as Assistant to Electrical Designer and progress my work position to Senior Electrical Engineer.
-                For last 5 years i was based in UK. At the moment, I am self-employed and I am providing service as Electrical Engineer to the one of the leading consulting company in Northern Ireland
-                and UK.
-            </p>
-            <p>
-                After my return to Poland I decided to change profession and became a software developer.
-                From September I am attending the course for front-end developers at CoderLab.
-            </p>
-            <a href="https://mkitowski.github.io/CVProject/" target="_blank" class="cv">Look at my CV</a>
-            <h2>Technologies I use</h2>
-            <div class="row techno">
-                <div class="col-3"><i class="fab fa-html5"></i><p>HTML vesrion 5</p></div>
-                <div class="col-3"><i class="fab fa-css3-alt"></i><p>CSS version 3</p></div>
-                <div class="col-3"><i class="fab fa-sass"></i><p>Sass</p></div>
-                <div class="col-3"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
-            </div>
-            <div class="row techno">
-                <div class="col-3"><i class="fab fa-react"></i><p>React</p></div>
-                <div class="col-3">JQuery</div>
-                <div class="col-3"><i class="fab fa-php"></i><p>PHP</p></div>
-                <div class="col-3"><i class="fas fa-database"></i><p>MySQL</p></div>
-            </div>
-            <div class="row techno">
-                <div class="col-6"><i class="fab fa-git"></i><p>GIT - version control</p></div>
-                <div class="col-6"><i class="fab fa-npm"></i><p>npm</p></div>
-            </div>
-        </div>
-
+      </div>
     </section>
-    <section id="code">
+    <main>
+      <section id="me">
         <div class="container">
-            <h2>My work</h2>
-            <p>Below you can finde some of my works</p>
-            <div class="portfolio">
-                <div class="project mypage">
-                    <div class="shodow"></div>
-                    <div class="ptitle">My personal webpage</div>
-                    <a href="https://github.com/mkitowski/Kytek" class="github" target="_blanck">
-                        <i class="fab fa-github"></i> GitHUB
-                    </a>
-                    <a href="http://kytek.pl" class="web" target="_blanck">
-                        <i class="fas fa-tablet-alt"></i> Web App
-                    </a>
-                </div>
-                <div class="project p2048">
-                    <div class="shodow"></div>
-                    <div class="ptitle">My version of popular puzzle game</div>
-
-                    <a href="https://github.com/mkitowski/2048" class="github" target="_blanck">
-                        <i class="fab fa-github"></i> GitHUB
-                    </a>
-                    <a href="https://mkitowski.github.io/2048/" class="web" target="_blanck">
-                        <i class="fas fa-tablet-alt"></i> Web App
-                    </a>
-                </div>
-                <div class="project calc">
-                    <div class="shodow"></div>
-                    <div class="ptitle">Simple Calculator</div>
-
-                    <a href="https://github.com/mkitowski/Calc" class="github" target="_blanck">
-                        <i class="fab fa-github"></i> GitHUB
-                    </a>
-                    <a href="http://kytek.pl/kalkulator/" class="web" target="_blanck">
-                        <i class="fas fa-tablet-alt"></i> Web App
-                    </a>
-                </div>
-                <div class="project tabl">
-                    <div class="shodow"></div>
-                    <div class="ptitle">App made for my daughters to improve multiplication</div>
-                    <a href="https://github.com/mkitowski/Tabliczka" class="github" target="_blanck">
-                        <i class="fab fa-github"></i> GitHUB
-                    </a>
-                    <a href="http://kytek.pl/Tabliczka/" class="web" target="_blanck">
-                        <i class="fas fa-tablet-alt"></i> Web App
-                    </a>
-                </div>
+          <h2>My story</h2>
+          <p>
+            I`m experienced specialist in the field of Electrical Engineering. I
+            have started as Assistant to Electrical Designer and progress my
+            work position to Senior Electrical Engineer. For last 5 years i was
+            based in UK. At the moment, I am self-employed and I am providing
+            service as Electrical Engineer to the one of the leading consulting
+            company in Northern Ireland and UK.
+          </p>
+          <p>
+            After my return to Poland I decided to change profession and became
+            a software developer. From September I am attending the course for
+            front-end developers at CoderLab.
+          </p>
+          <a
+            href="https://mkitowski.github.io/CVProject/"
+            target="_blank"
+            class="cv"
+            >Look at my CV</a
+          >
+          <h2>Technologies I use</h2>
+          <div class="row techno">
+            <div class="col-3">
+              <i class="fab fa-html5"></i>
+              <p>HTML vesrion 5</p>
             </div>
+            <div class="col-3">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS version 3</p>
+            </div>
+            <div class="col-3">
+              <i class="fab fa-sass"></i>
+              <p>Sass</p>
+            </div>
+            <div class="col-3">
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="row techno">
+            <div class="col-3">
+              <i class="fab fa-react"></i>
+              <p>React</p>
+            </div>
+            <div class="col-3">JQuery</div>
+            <div class="col-3">
+              <i class="fab fa-php"></i>
+              <p>PHP</p>
+            </div>
+            <div class="col-3">
+              <i class="fas fa-database"></i>
+              <p>MySQL</p>
+            </div>
+          </div>
+          <div class="row techno">
+            <div class="col-6">
+              <i class="fab fa-git"></i>
+              <p>GIT - version control</p>
+            </div>
+            <div class="col-6">
+              <i class="fab fa-npm"></i>
+              <p>npm</p>
+            </div>
+          </div>
         </div>
-
-    </section>
-    <section id="mail">
+      </section>
+      <section id="code">
         <div class="container">
-            <h2>Contact</h2>
-            <div id="form-message"></div>
-            <form id="contactform" method="POST" action="https://formspree.io/maciej.kitowski@gmail.com">
-                <div class="field">
-                    <input type="text" id="uname" name="uname" placeholder="Your Name" required>
-                    <div id="uname-info" class="info"></div>
-                </div>
-                <div class="field">
+          <h2>My work</h2>
+          <p>Below you can finde some of my works</p>
+          <div class="portfolio">
+            <div class="project mypage">
+              <div class="shodow"></div>
+              <div class="ptitle">My personal webpage</div>
+              <a
+                href="https://github.com/mkitowski/Kytek"
+                class="github"
+                target="_blanck"
+              >
+                <i class="fab fa-github"></i> GitHUB
+              </a>
+              <a href="http://kytek.pl" class="web" target="_blanck">
+                <i class="fas fa-tablet-alt"></i> Web App
+              </a>
+            </div>
+            <div class="project BSD">
+              <div class="shodow"></div>
+              <div class="ptitle">Company landing page</div>
 
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                    <div id="mail-info" class="info"></div>
-                </div>
-                <div class="field">
+              <a
+                href="https://github.com/mkitowski/BSD"
+                class="github"
+                target="_blanck"
+              >
+                <i class="fab fa-github"></i> GitHUB
+              </a>
+              <a
+                href="https://bsd-gda.pl/"
+                class="web"
+                target="_blanck"
+              >
+                <i class="fas fa-tablet-alt"></i> Web App
+              </a>
+            </div>
+            <div class="project p2048">
+              <div class="shodow"></div>
+              <div class="ptitle">My version of popular puzzle game</div>
 
-                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-                    <div id="mess-info" class="info"></div>
-                </div>
-                <div class="field">
-                    <label class="lab">Are you a human?</label>
-                    <input type="text" id="check" name="check" placeholder="yes or no" required>
-                    <div id="check-info" class="info"></div>
-                </div>
-                <div class="field">
-                    <button type="submit" name="submit" class="submit">Send</button>
-                </div>
-            </form>
+              <a
+                href="https://github.com/mkitowski/2048"
+                class="github"
+                target="_blanck"
+              >
+                <i class="fab fa-github"></i> GitHUB
+              </a>
+              <a
+                href="https://mkitowski.github.io/2048/"
+                class="web"
+                target="_blanck"
+              >
+                <i class="fas fa-tablet-alt"></i> Web App
+              </a>
+            </div>
+            <div class="project calc">
+              <div class="shodow"></div>
+              <div class="ptitle">Simple Calculator</div>
+
+              <a
+                href="https://github.com/mkitowski/Calc"
+                class="github"
+                target="_blanck"
+              >
+                <i class="fab fa-github"></i> GitHUB
+              </a>
+              <a
+                href="http://kytek.pl/kalkulator/"
+                class="web"
+                target="_blanck"
+              >
+                <i class="fas fa-tablet-alt"></i> Web App
+              </a>
+            </div>
+            <div class="project tabl">
+              <div class="shodow"></div>
+              <div class="ptitle">
+                App made for my daughters to improve multiplication
+              </div>
+              <a
+                href="https://github.com/mkitowski/Tabliczka"
+                class="github"
+                target="_blanck"
+              >
+                <i class="fab fa-github"></i> GitHUB
+              </a>
+              <a href="http://kytek.pl/Tabliczka/" class="web" target="_blanck">
+                <i class="fas fa-tablet-alt"></i> Web App
+              </a>
+            </div>
+          </div>
         </div>
-
-    </section>
-</main>
-
+      </section>
+      <section id="mail">
+        <div class="container">
+          <h2>Contact</h2>
+          <div id="form-message"></div>
+          <form
+            id="contactform"
+            method="POST"
+            action="https://formspree.io/maciej.kitowski@gmail.com"
+          >
+            <div class="field">
+              <input
+                type="text"
+                id="uname"
+                name="uname"
+                placeholder="Your Name"
+                required
+              />
+              <div id="uname-info" class="info"></div>
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+              <div id="mail-info" class="info"></div>
+            </div>
+            <div class="field">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows="4"
+                required
+              ></textarea>
+              <div id="mess-info" class="info"></div>
+            </div>
+            <div class="field">
+              <label class="lab">Are you a human?</label>
+              <input
+                type="text"
+                id="check"
+                name="check"
+                placeholder="yes or no"
+                required
+              />
+              <div id="check-info" class="info"></div>
+            </div>
+            <div class="field">
+              <button type="submit" name="submit" class="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <div class="left">
-            &copy; copyright by Maciej Kitowski 2019
-        </div>
-        <div class="right">
-            <a href="https://github.com/mkitowski" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/maciej-kitowski-5795b360/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:maciej.kitowski@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="tel:+48505676131"><i class="fas fa-phone-square"></i></a>
-        </div>
+      <div class="left">
+        &copy; copyright by Maciej Kitowski 2019
+      </div>
+      <div class="right">
+        <a href="https://github.com/mkitowski" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/maciej-kitowski-5795b360/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:maciej.kitowski@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="tel:+48505676131"><i class="fas fa-phone-square"></i></a>
+      </div>
     </footer>
-   <script
-			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			  crossorigin="anonymous"></script> 
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/contact.js"></script>
     <script src="js/timer.js"></script>
-</body>
+  </body>
 </html>
